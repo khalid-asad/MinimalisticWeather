@@ -1,0 +1,490 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		30B1B5DD228D02E200A79A41 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B1B5DC228D02E200A79A41 /* AppDelegate.swift */; };
+		30B1B5DF228D02E200A79A41 /* WeatherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B1B5DE228D02E200A79A41 /* WeatherViewController.swift */; };
+		30B1B5E2228D02E200A79A41 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30B1B5E0228D02E200A79A41 /* Main.storyboard */; };
+		30B1B5E4228D02E300A79A41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 30B1B5E3228D02E300A79A41 /* Assets.xcassets */; };
+		30B1B5E7228D02E300A79A41 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 30B1B5E5228D02E300A79A41 /* LaunchScreen.storyboard */; };
+		30B1B5F2228D02E300A79A41 /* Minimalistic_WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B1B5F1228D02E300A79A41 /* Minimalistic_WeatherTests.swift */; };
+		30B1B5FE228D051900A79A41 /* ForecastResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B1B5FD228D051900A79A41 /* ForecastResponse.swift */; };
+		30B1B602228D0B1500A79A41 /* WeatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30B1B601228D0B1500A79A41 /* WeatherModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		30B1B5EE228D02E300A79A41 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 30B1B5D1228D02E200A79A41 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 30B1B5D8228D02E200A79A41;
+			remoteInfo = "Minimalistic Weather";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		30B1B5D9228D02E200A79A41 /* Minimalistic Weather.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Minimalistic Weather.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30B1B5DC228D02E200A79A41 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		30B1B5DE228D02E200A79A41 /* WeatherViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherViewController.swift; sourceTree = "<group>"; };
+		30B1B5E1228D02E200A79A41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		30B1B5E3228D02E300A79A41 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		30B1B5E6228D02E300A79A41 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		30B1B5E8228D02E300A79A41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30B1B5ED228D02E300A79A41 /* Minimalistic WeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Minimalistic WeatherTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		30B1B5F1228D02E300A79A41 /* Minimalistic_WeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Minimalistic_WeatherTests.swift; sourceTree = "<group>"; };
+		30B1B5F3228D02E300A79A41 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30B1B5FD228D051900A79A41 /* ForecastResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForecastResponse.swift; sourceTree = "<group>"; };
+		30B1B601228D0B1500A79A41 /* WeatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		30B1B5D6228D02E200A79A41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30B1B5EA228D02E300A79A41 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		30B1B5D0228D02E200A79A41 = {
+			isa = PBXGroup;
+			children = (
+				30B1B5FC228D047D00A79A41 /* API Layer */,
+				30B1B5DB228D02E200A79A41 /* Minimalistic Weather */,
+				30B1B5F0228D02E300A79A41 /* Minimalistic WeatherTests */,
+				30B1B5DA228D02E200A79A41 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		30B1B5DA228D02E200A79A41 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				30B1B5D9228D02E200A79A41 /* Minimalistic Weather.app */,
+				30B1B5ED228D02E300A79A41 /* Minimalistic WeatherTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		30B1B5DB228D02E200A79A41 /* Minimalistic Weather */ = {
+			isa = PBXGroup;
+			children = (
+				30B1B5FF228D0B0500A79A41 /* Models */,
+				30B1B5DC228D02E200A79A41 /* AppDelegate.swift */,
+				30B1B5DE228D02E200A79A41 /* WeatherViewController.swift */,
+				30B1B5E0228D02E200A79A41 /* Main.storyboard */,
+				30B1B5E3228D02E300A79A41 /* Assets.xcassets */,
+				30B1B5E5228D02E300A79A41 /* LaunchScreen.storyboard */,
+				30B1B5E8228D02E300A79A41 /* Info.plist */,
+			);
+			path = "Minimalistic Weather";
+			sourceTree = "<group>";
+		};
+		30B1B5F0228D02E300A79A41 /* Minimalistic WeatherTests */ = {
+			isa = PBXGroup;
+			children = (
+				30B1B5F1228D02E300A79A41 /* Minimalistic_WeatherTests.swift */,
+				30B1B5F3228D02E300A79A41 /* Info.plist */,
+			);
+			path = "Minimalistic WeatherTests";
+			sourceTree = "<group>";
+		};
+		30B1B5FC228D047D00A79A41 /* API Layer */ = {
+			isa = PBXGroup;
+			children = (
+				30B1B5FD228D051900A79A41 /* ForecastResponse.swift */,
+			);
+			path = "API Layer";
+			sourceTree = "<group>";
+		};
+		30B1B5FF228D0B0500A79A41 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				30B1B601228D0B1500A79A41 /* WeatherModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		30B1B5D8228D02E200A79A41 /* Minimalistic Weather */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30B1B5F6228D02E300A79A41 /* Build configuration list for PBXNativeTarget "Minimalistic Weather" */;
+			buildPhases = (
+				30B1B5D5228D02E200A79A41 /* Sources */,
+				30B1B5D6228D02E200A79A41 /* Frameworks */,
+				30B1B5D7228D02E200A79A41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Minimalistic Weather";
+			productName = "Minimalistic Weather";
+			productReference = 30B1B5D9228D02E200A79A41 /* Minimalistic Weather.app */;
+			productType = "com.apple.product-type.application";
+		};
+		30B1B5EC228D02E300A79A41 /* Minimalistic WeatherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30B1B5F9228D02E300A79A41 /* Build configuration list for PBXNativeTarget "Minimalistic WeatherTests" */;
+			buildPhases = (
+				30B1B5E9228D02E300A79A41 /* Sources */,
+				30B1B5EA228D02E300A79A41 /* Frameworks */,
+				30B1B5EB228D02E300A79A41 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				30B1B5EF228D02E300A79A41 /* PBXTargetDependency */,
+			);
+			name = "Minimalistic WeatherTests";
+			productName = "Minimalistic WeatherTests";
+			productReference = 30B1B5ED228D02E300A79A41 /* Minimalistic WeatherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		30B1B5D1228D02E200A79A41 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Khalid Asad";
+				TargetAttributes = {
+					30B1B5D8228D02E200A79A41 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					30B1B5EC228D02E300A79A41 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 30B1B5D8228D02E200A79A41;
+					};
+				};
+			};
+			buildConfigurationList = 30B1B5D4228D02E200A79A41 /* Build configuration list for PBXProject "Minimalistic Weather" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 30B1B5D0228D02E200A79A41;
+			productRefGroup = 30B1B5DA228D02E200A79A41 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				30B1B5D8228D02E200A79A41 /* Minimalistic Weather */,
+				30B1B5EC228D02E300A79A41 /* Minimalistic WeatherTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		30B1B5D7228D02E200A79A41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30B1B5E7228D02E300A79A41 /* LaunchScreen.storyboard in Resources */,
+				30B1B5E4228D02E300A79A41 /* Assets.xcassets in Resources */,
+				30B1B5E2228D02E200A79A41 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30B1B5EB228D02E300A79A41 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		30B1B5D5228D02E200A79A41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30B1B5DF228D02E200A79A41 /* WeatherViewController.swift in Sources */,
+				30B1B5DD228D02E200A79A41 /* AppDelegate.swift in Sources */,
+				30B1B602228D0B1500A79A41 /* WeatherModel.swift in Sources */,
+				30B1B5FE228D051900A79A41 /* ForecastResponse.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		30B1B5E9228D02E300A79A41 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				30B1B5F2228D02E300A79A41 /* Minimalistic_WeatherTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		30B1B5EF228D02E300A79A41 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 30B1B5D8228D02E200A79A41 /* Minimalistic Weather */;
+			targetProxy = 30B1B5EE228D02E300A79A41 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		30B1B5E0228D02E200A79A41 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30B1B5E1228D02E200A79A41 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		30B1B5E5228D02E300A79A41 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				30B1B5E6228D02E300A79A41 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		30B1B5F4228D02E300A79A41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		30B1B5F5228D02E300A79A41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		30B1B5F7228D02E300A79A41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Minimalistic Weather/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Logismiko.Minimalistic-Weather";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		30B1B5F8228D02E300A79A41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Minimalistic Weather/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Logismiko.Minimalistic-Weather";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		30B1B5FA228D02E300A79A41 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Minimalistic WeatherTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Logismiko.Minimalistic-WeatherTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Minimalistic Weather.app/Minimalistic Weather";
+			};
+			name = Debug;
+		};
+		30B1B5FB228D02E300A79A41 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Minimalistic WeatherTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Logismiko.Minimalistic-WeatherTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Minimalistic Weather.app/Minimalistic Weather";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30B1B5D4228D02E200A79A41 /* Build configuration list for PBXProject "Minimalistic Weather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30B1B5F4228D02E300A79A41 /* Debug */,
+				30B1B5F5228D02E300A79A41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30B1B5F6228D02E300A79A41 /* Build configuration list for PBXNativeTarget "Minimalistic Weather" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30B1B5F7228D02E300A79A41 /* Debug */,
+				30B1B5F8228D02E300A79A41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		30B1B5F9228D02E300A79A41 /* Build configuration list for PBXNativeTarget "Minimalistic WeatherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				30B1B5FA228D02E300A79A41 /* Debug */,
+				30B1B5FB228D02E300A79A41 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 30B1B5D1228D02E200A79A41 /* Project object */;
+}
